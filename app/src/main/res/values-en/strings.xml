@@ -1,0 +1,81 @@
+<resources>
+    <!-- App Basic Info -->
+    <string name="app_name">Floating Clock Pro</string>
+    <string name="app_description">Multi-timezone floating clock with 0.01-second precision</string>
+    <string name="privacy_policy_url">https://your-website.com/privacy-policy</string>
+    
+    <!-- Permissions -->
+    <string name="permission_overlay_title">Overlay Permission</string>
+    <string name="permission_overlay_description">Allow app to display floating clock over other apps</string>
+    <string name="permission_required">🔒 Overlay Permission Required</string>
+    <string name="permission_description">Grant permission to use floating clock features</string>
+    <string name="permission_grant">Grant</string>
+    <string name="permission_granted_toast">Permission granted, you can now start floating clock</string>
+    <string name="permission_denied_toast">Overlay permission required for this feature</string>
+    
+    <!-- Main Screen -->
+    <string name="main_title">🕰️ Floating Clock</string>
+    <string name="settings">Settings</string>
+    <string name="my_clocks">My Clocks</string>
+    <string name="active_clocks">%1$d/%2$d Active</string>
+    <string name="no_clocks_title">🕰️ No clocks configured yet</string>
+    <string name="no_clocks_description">Tap settings to add clocks</string>
+    <string name="clock_running">🚀 Floating clock is running</string>
+    
+    <!-- Clock Control -->
+    <string name="start_floating">Start Floating</string>
+    <string name="stop_floating">Stop Floating</string>
+    <string name="permission_needed">Permission Required</string>
+    
+    <!-- Settings Screen -->
+    <string name="settings_title">⚙️ Clock Settings</string>
+    <string name="back">Back</string>
+    <string name="add_clock">Add Clock</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    
+    <!-- Clock Configuration -->
+    <string name="add_clock_title">➕ Add Clock</string>
+    <string name="edit_clock_title">✏️ Edit Clock</string>
+    <string name="clock_name">Clock Name</string>
+    <string name="new_clock">New Clock</string>
+    <string name="timezone">Timezone</string>
+    <string name="time_format">Time Format</string>
+    <string name="hour_24">24-hour</string>
+    <string name="hour_12">12-hour</string>
+    <string name="display_options">Display Options</string>
+    <string name="show_date">Show Date</string>
+    <string name="show_weekday">Show Weekday</string>
+    <string name="show_centiseconds">Show Centiseconds</string>
+    <string name="theme_style">Theme Style</string>
+    <string name="font_size">Font Size: %dsp</string>
+    <string name="transparency">Transparency: %d%%</string>
+    
+    <!-- Timezone Names -->
+    <string name="timezone_beijing">Beijing Time</string>
+    <string name="timezone_utc">UTC</string>
+    <string name="timezone_newyork">New York Time</string>
+    <string name="timezone_losangeles">Los Angeles Time</string>
+    <string name="timezone_london">London Time</string>
+    <string name="timezone_paris">Paris Time</string>
+    <string name="timezone_tokyo">Tokyo Time</string>
+    <string name="timezone_seoul">Seoul Time</string>
+    <string name="timezone_sydney">Sydney Time</string>
+    <string name="timezone_system">System Timezone</string>
+    
+    <!-- Floating Clock -->
+    <string name="close">Close</string>
+    
+    <!-- Service Notifications -->
+    <string name="service_channel_name">Floating Clock Service</string>
+    <string name="service_channel_description">Keep floating clock running</string>
+    <string name="service_notification_title">Floating Clock</string>
+    <string name="service_notification_text">Floating clock is running</string>
+    
+    <!-- Clock Info Display -->
+    <string name="clock_info_timezone">🌍 Timezone: %s</string>
+    <string name="clock_info_format">⏰ Format: %s</string>
+    <string name="clock_info_features">📊 Display: %s</string>
+</resources>

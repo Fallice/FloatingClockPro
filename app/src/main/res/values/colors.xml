@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Icon Theme Colors -->
+    <color name="clock_blue">#4A90E2</color>
+    <color name="clock_blue_light">#E3F2FD</color>
+    <color name="clock_blue_medium">#BBDEFB</color>
+    <color name="clock_blue_dark">#1976D2</color>
+    
+    <!-- Legacy Colors (keeping for compatibility) -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ic_launcher_background">#FFFFFFFF</color>
+    
+    <!-- New Theme Colors -->
+    <color name="primary">#4A90E2</color>
+    <color name="primary_variant">#1976D2</color>
+    <color name="secondary">#BBDEFB</color>
+    <color name="background">#F8FBFF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="error">#F44336</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#1976D2</color>
+    <color name="on_background">#1976D2</color>
+    <color name="on_surface">#1976D2</color>
+    <color name="on_error">#FFFFFF</color>
+</resources>

@@ -1,0 +1,81 @@
+<resources>
+    <!-- App Basic Info -->
+    <string name="app_name">精准悬浮时钟</string>
+    <string name="app_description">多时区精准悬浮时钟，支持0.01秒精度显示</string>
+    <string name="privacy_policy_url">https://your-website.com/privacy-policy</string>
+    
+    <!-- Permissions -->
+    <string name="permission_overlay_title">悬浮窗权限</string>
+    <string name="permission_overlay_description">允许应用在其他应用上方显示悬浮时钟</string>
+    <string name="permission_required">🔒 需要悬浮窗权限</string>
+    <string name="permission_description">授权后才能使用悬浮时钟功能</string>
+    <string name="permission_grant">授权</string>
+    <string name="permission_granted_toast">权限已授予，现在可以启动悬浮时钟</string>
+    <string name="permission_denied_toast">需要悬浮窗权限才能使用此功能</string>
+    
+    <!-- Main Screen -->
+    <string name="main_title">🕰️ 悬浮时钟</string>
+    <string name="settings">设置</string>
+    <string name="my_clocks">我的时钟</string>
+    <string name="active_clocks">%1$d/%2$d 活跃</string>
+    <string name="no_clocks_title">🕰️ 还没有配置时钟</string>
+    <string name="no_clocks_description">点击右上角设置按钮添加时钟</string>
+    <string name="clock_running">🚀 悬浮时钟运行中</string>
+    
+    <!-- Clock Control -->
+    <string name="start_floating">启动悬浮</string>
+    <string name="stop_floating">停止悬浮</string>
+    <string name="permission_needed">需要权限</string>
+    
+    <!-- Settings Screen -->
+    <string name="settings_title">⚙️ 时钟设置</string>
+    <string name="back">返回</string>
+    <string name="add_clock">添加时钟</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    
+    <!-- Clock Configuration -->
+    <string name="add_clock_title">➕ 添加时钟</string>
+    <string name="edit_clock_title">✏️ 编辑时钟</string>
+    <string name="clock_name">时钟名称</string>
+    <string name="new_clock">新时钟</string>
+    <string name="timezone">时区</string>
+    <string name="time_format">时间格式</string>
+    <string name="hour_24">24小时制</string>
+    <string name="hour_12">12小时制</string>
+    <string name="display_options">显示选项</string>
+    <string name="show_date">显示日期</string>
+    <string name="show_weekday">显示星期</string>
+    <string name="show_centiseconds">显示厘秒</string>
+    <string name="theme_style">主题样式</string>
+    <string name="font_size">字体大小: %dsp</string>
+    <string name="transparency">透明度: %d%%</string>
+    
+    <!-- Timezone Names -->
+    <string name="timezone_beijing">北京时间</string>
+    <string name="timezone_utc">世界协调时</string>
+    <string name="timezone_newyork">纽约时间</string>
+    <string name="timezone_losangeles">洛杉矶时间</string>
+    <string name="timezone_london">伦敦时间</string>
+    <string name="timezone_paris">巴黎时间</string>
+    <string name="timezone_tokyo">东京时间</string>
+    <string name="timezone_seoul">首尔时间</string>
+    <string name="timezone_sydney">悉尼时间</string>
+    <string name="timezone_system">系统时区</string>
+    
+    <!-- Floating Clock -->
+    <string name="close">关闭</string>
+    
+    <!-- Service Notifications -->
+    <string name="service_channel_name">悬浮时钟服务</string>
+    <string name="service_channel_description">保持悬浮时钟运行</string>
+    <string name="service_notification_title">悬浮时钟</string>
+    <string name="service_notification_text">悬浮时钟正在运行</string>
+    
+    <!-- Clock Info Display -->
+    <string name="clock_info_timezone">🌍 时区: %s</string>
+    <string name="clock_info_format">⏰ 格式: %s</string>
+    <string name="clock_info_features">📊 显示: %s</string>
+</resources>
