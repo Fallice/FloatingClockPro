@@ -44,20 +44,21 @@
 - Android Studio
 - Kotlin
 - Jetpack Compose
-- Gradle 8.7
-- Android API Level 34
+- Gradle 8.13.2
+- Android API Level 36 (Android 16)
 
 ## 权限说明
 
 应用需要以下权限：
 - `SYSTEM_ALERT_WINDOW` - 悬浮窗显示权限
 - `FOREGROUND_SERVICE` - 前台服务权限
+- `FOREGROUND_SERVICE_SPECIAL_USE` - 特殊用途前台服务权限 (API 34+)
 - `POST_NOTIFICATIONS` - 通知权限
 
 ## 编译说明
 
 如果遇到Gradle下载超时问题，可以：
-1. 下载 `gradle-8.7-bin.zip` 到项目根目录
+1. 下载 `gradle-8.13.2-bin.zip` 到项目根目录
 2. 修改 `gradle/wrapper/gradle-wrapper.properties` 中的 `distributionUrl` 为本地文件路径
 
 ```bash
@@ -68,5 +69,6 @@
 ## 注意事项
 
 - Android 6.0及以上系统需要手动授权悬浮窗权限
+- 针对 Android 16 (API 36) 进行了优化，符合 Google Play 最新目标 API 级别要求
 - 某些定制系统可能需要额外的自启动权限
 - 应用会在通知栏显示前台服务通知

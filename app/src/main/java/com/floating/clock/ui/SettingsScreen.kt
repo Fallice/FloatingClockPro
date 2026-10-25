@@ -173,8 +173,9 @@ fun ClockConfigCard(
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
+                val context = LocalContext.current
                 Text(
-                    text = config.name,
+                    text = config.getLocalizedName(context),
                     style = MaterialTheme.typography.headlineSmall.copy(
                         fontWeight = FontWeight.Bold
                     ),
@@ -195,25 +196,28 @@ fun ClockConfigCard(
             Spacer(modifier = Modifier.height(8.dp))
             
             Text(
-                text = "🌍 时区: ${config.timeZoneId}",
+                text = stringResource(R.string.clock_info_timezone, config.timeZoneId),
                 style = MaterialTheme.typography.bodyMedium,
                 color = colorResource(R.color.clock_blue)
             )
             
             Text(
-                text = "⏰ 格式: ${if (config.is24HourFormat) "24小时制" else "12小时制"}",
+                text = stringResource(
+                    R.string.clock_info_format, 
+                    if (config.is24HourFormat) stringResource(R.string.hour_24) else stringResource(R.string.hour_12)
+                ),
                 style = MaterialTheme.typography.bodyMedium,
                 color = colorResource(R.color.clock_blue)
             )
             
-            if (config.showDate || config.showWeekday) {
+            if (config.showDate || config.showWeekday || config.showCentiseconds) {
                 val features = mutableListOf<String>()
-                if (config.showDate) features.add("日期")
-                if (config.showWeekday) features.add("星期")
-                if (config.showCentiseconds) features.add("毫秒")
+                if (config.showDate) features.add(stringResource(R.string.feature_date))
+                if (config.showWeekday) features.add(stringResource(R.string.feature_weekday))
+                if (config.showCentiseconds) features.add(stringResource(R.string.feature_centiseconds))
                 
                 Text(
-                    text = "📊 显示: ${features.joinToString(", ")}",
+                    text = stringResource(R.string.clock_info_features, features.joinToString(", ")),
                     style = MaterialTheme.typography.bodyMedium,
                     color = colorResource(R.color.clock_blue)
                 )
@@ -272,8 +276,8 @@ fun ClockConfigDialog(
     onSave: (ClockConfig) -> Unit,
     onDismiss: () -> Unit
 ) {
-    var name by remember { mutableStateOf(config?.name ?: "") }
     val context = LocalContext.current
+    var name by remember { mutableStateOf(config?.getLocalizedName(context) ?: "") }
     val defaultClockName = stringResource(R.string.new_clock)
     
     // Initialize name with localized default if empty

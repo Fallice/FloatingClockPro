@@ -53,6 +53,25 @@
     <string name="font_size">字体大小: %dsp</string>
     <string name="transparency">透明度: %d%%</string>
     
+    <!-- Clock Default Names -->
+    <string name="clock_local">本地时钟</string>
+    <string name="clock_utc">UTC时钟</string>
+    <string name="clock_newyork">纽约时钟</string>
+
+    <!-- Features -->
+    <string name="feature_date">日期</string>
+    <string name="feature_weekday">星期</string>
+    <string name="feature_centiseconds">毫秒</string>
+
+    <!-- Themes -->
+    <string name="theme_dark">深色主题</string>
+    <string name="theme_light">浅色主题</string>
+    <string name="theme_blue">蓝色主题</string>
+    <string name="theme_green">绿色主题</string>
+    <string name="theme_red">红色主题</string>
+    <string name="theme_purple">紫色主题</string>
+    <string name="theme_transparent">透明主题</string>
+
     <!-- Timezone Names -->
     <string name="timezone_beijing">北京时间</string>
     <string name="timezone_utc">世界协调时</string>

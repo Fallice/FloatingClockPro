@@ -14,6 +14,7 @@ import androidx.compose.ui.draw.scale
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.colorResource
 import com.floating.clock.R
 import androidx.compose.ui.text.font.FontFamily
@@ -144,8 +145,9 @@ fun HomeClockWidget(
         ) {
             // 时钟名称 - 更有活力的设计
             if (!compact) {
+                val context = LocalContext.current
                 Text(
-                    text = "🕰️ ${config.name}",
+                    text = "🕰️ ${config.getLocalizedName(context)}",
                     fontSize = (config.textSize * 0.6f).sp,
                     fontWeight = FontWeight.Bold,
                     color = colorResource(R.color.clock_blue_dark).copy(alpha = shimmerAlpha * 0.9f),

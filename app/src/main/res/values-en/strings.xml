@@ -53,6 +53,25 @@
     <string name="font_size">Font Size: %dsp</string>
     <string name="transparency">Transparency: %d%%</string>
     
+    <!-- Clock Default Names -->
+    <string name="clock_local">Local Clock</string>
+    <string name="clock_utc">UTC Clock</string>
+    <string name="clock_newyork">New York Clock</string>
+
+    <!-- Features -->
+    <string name="feature_date">Date</string>
+    <string name="feature_weekday">Weekday</string>
+    <string name="feature_centiseconds">Centiseconds</string>
+
+    <!-- Themes -->
+    <string name="theme_dark">Dark Theme</string>
+    <string name="theme_light">Light Theme</string>
+    <string name="theme_blue">Blue Theme</string>
+    <string name="theme_green">Green Theme</string>
+    <string name="theme_red">Red Theme</string>
+    <string name="theme_purple">Purple Theme</string>
+    <string name="theme_transparent">Transparent Theme</string>
+
     <!-- Timezone Names -->
     <string name="timezone_beijing">Beijing Time</string>
     <string name="timezone_utc">UTC</string>

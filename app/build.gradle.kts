@@ -7,14 +7,14 @@ plugins {
 
 android {
     namespace = "com.floating.clock"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.floating.clock"
         minSdk = 24
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0.0"
+        targetSdk = 36
+        versionCode = 2
+        versionName = "1.1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -24,10 +24,14 @@ android {
 
     signingConfigs {
         create("release") {
-            val keystorePropertiesFile = rootProject.file("local.properties")
+            val keystorePropertiesFile = rootProject.file("keystore_config.properties")
+            val localPropertiesFile = rootProject.file("local.properties")
             val keystoreProperties = Properties()
             if (keystorePropertiesFile.exists()) {
                 keystoreProperties.load(keystorePropertiesFile.inputStream())
+            }
+            if (localPropertiesFile.exists()) {
+                keystoreProperties.load(localPropertiesFile.inputStream())
             }
             
             storeFile = file("../floating_clock_release.jks")
@@ -53,11 +57,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
     buildFeatures {
         compose = true

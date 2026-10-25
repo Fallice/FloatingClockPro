@@ -178,7 +178,9 @@ fun MainScreen(
                             horizontalArrangement = Arrangement.SpaceBetween,
                             verticalAlignment = Alignment.CenterVertically
                         ) {
-                            Column {
+                            Column(
+                                modifier = Modifier.weight(1f)
+                            ) {
                                 Text(
                                     text = stringResource(R.string.permission_required),
                                     style = MaterialTheme.typography.titleMedium,
@@ -190,13 +192,19 @@ fun MainScreen(
                                     color = colorResource(R.color.clock_blue)
                                 )
                             }
+                            Spacer(modifier = Modifier.width(12.dp))
                             Button(
                                 onClick = onRequestPermission,
                                 colors = ButtonDefaults.buttonColors(
                                     containerColor = colorResource(R.color.clock_blue)
-                                )
+                                ),
+                                contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp)
                             ) {
-                                Text(stringResource(R.string.permission_grant))
+                                Text(
+                                    text = stringResource(R.string.permission_grant),
+                                    maxLines = 1,
+                                    softWrap = false
+                                )
                             }
                         }
                     }
@@ -286,7 +294,7 @@ fun MainScreen(
                             ) {
                                 Column(modifier = Modifier.weight(1f)) {
                                     Text(
-                                        text = config.name,
+                                        text = config.getLocalizedName(context),
                                         style = MaterialTheme.typography.titleLarge.copy(
                                             fontWeight = FontWeight.Bold
                                         ),

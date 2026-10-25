@@ -151,8 +151,9 @@ fun ThemeSelector(
                     }
                     
                     Spacer(modifier = Modifier.width(12.dp))
+                    val context = LocalContext.current
                     Text(
-                        text = theme.displayName,
+                        text = theme.getLocalizedDisplayName(context),
                         style = MaterialTheme.typography.bodyMedium.copy(
                             fontWeight = FontWeight.Medium
                         ),
