@@ -44,7 +44,8 @@
 - Android Studio
 - Kotlin
 - Jetpack Compose
-- Gradle 8.13.2
+- Gradle 8.13
+- JDK 17 及以上（推荐 JDK 21）
 - Android API Level 36 (Android 16)
 
 ## 权限说明
